@@ -92,7 +92,8 @@ InstallMosesTools () {
 
 ###################################################################
 #
-# FAST BPE 
+# FAST 
+
 #
 ###################################################################
 
@@ -100,7 +101,7 @@ InstallFastBPE () {
   cd ${tools_ext}
   if [ ! -x fastBPE/fast ] ; then
     echo " - download fastBPE software from github"
-    wget https://github.com/glample/fastBPE/archive/master.zip
+    wget https://github.com/glample/fastBPE/archive/7d2a4fe104eabe9c3aee8c72a1c9e5ec20f9f10c.zip -O master.zip
     unzip master.zip
     /bin/rm master.zip
     mv fastBPE-master fastBPE
