@@ -104,7 +104,7 @@ InstallFastBPE () {
     wget https://github.com/glample/fastBPE/archive/7d2a4fe104eabe9c3aee8c72a1c9e5ec20f9f10c.zip -O master.zip
     unzip master.zip
     /bin/rm master.zip
-    mv fastBPE-master fastBPE
+    mv fastBPE-7d2a4fe104eabe9c3aee8c72a1c9e5ec20f9f10c fastBPE
     cd fastBPE
     echo " - compiling"
     g++ -std=c++11 -pthread -O3 fastBPE/main.cc -IfastBPE -o fast
